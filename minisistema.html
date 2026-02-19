@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Sistema Simples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .secao {
+      margin-top: 20px;
+      padding: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 6px 0;
+      border-bottom: 1px dashed #ddd;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    button {
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    .total {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mini Sistema Simples</h1>
+  <p id="infoUsuario"></p>
+
+  <div class="secao">
+    <h2>Produtos</h2>
+    <div id="listaProdutos"></div>
+  </div>
+
+  <div class="secao">
+    <h2>Carrinho</h2>
+    <div id="listaCarrinho"></div>
+    <div id="totalCarrinho" class="total">Total: R$ 0,00</div>
+    <button id="btnLimpar">Limpar carrinho</button>
+  </div>
+
+  <script src="minisistema.js"></script>
+</body>
+
+</html>

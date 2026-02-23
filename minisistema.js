@@ -38,7 +38,7 @@ const carrinho = { //  Inicia o objeto carrinho
   }, //  Fecha o metodo adicionar
   remover(idProduto) { //  Metodo para remover item
     const item = this.itens.find(i => i.id === idProduto); //  Procura no array o item cujo id seja igual ao idProduto
-    if (!item) return; // !item significa "não existe" (find retornou undefined)
+    if (!item) return; //  Se nao encontrar, sai
 
     item.quantidade -= 1; //  Diminui a quantidade
     if (item.quantidade <= 0) { //  Se zerar ou ficar negativo
